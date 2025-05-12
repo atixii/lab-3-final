@@ -1,0 +1,32 @@
+ 
+Decision Tree - Data
+
+●	The loan approval dataset is a collection of financial records and associated information used to determine the eligibility of individuals or organizations for obtaining loans from a lending institution. It includes various factors such as cibil score, income, employment status, loan term, loan amount, assets value, and loan status. This dataset is commonly used in machine learning and data analysis to develop models and algorithms that predict the likelihood of loan approval based on the given features.
+ 
+
+
+
+1.	Read data
+2.	Impute data:
+a.	if any value is null, empty or a blank space (“ ”), replace it with the most common
+value in its column
+3.	Repeat 10 times
+a.	Randomly divide data in train (75%) and test (25%)
+b.	Train Decision Tree model over train data, limited to maximum depth of 5
+i.	without using “loan_id” within the model
+c.	Make predictions over the test data
+d.	Calculate (and store) Metrics:
+i.	Overall accuracy
+ii.	Accuracy per each one of the classes
+iii.	Accuracy considering only “Graduates” vs “Not Graduates”
+iv.	Accuracy considering only “Self employed” and “Not self emplyed”
+4.	Plot the last tree obtained and identify (with code), the 5 most relevant columns
+5.	Print a table with results of the 10 executions and an “average”
+row
+ 
+
+6.	Generate a graphical representation on percentages of actual and predicted values of the model per number of dependents
+7.	Identify (if any) clients with rejected loans such as if would change from Not graduated to Graduated would have had approved loan.
+8.	For each client with rejected loan, identify the needed income (if any) to get an approval
+9.	For each client with approved loan, identify the maximum loan amount (if any) he could have asked and still have a positive response
+ 
